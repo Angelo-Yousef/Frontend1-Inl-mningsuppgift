@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <style>
+    body {
+      background-image: url('images/strand.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-size: 1rem;
+    }
+
+    a {
+      font-size: 1.2rem;
+    }
+
+    select,
+    input {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+
+    }
+
+    button {
+      font-size: 1.2rem;
+    }
+
+    #outputContainer {
+  font-size: 1.5rem; 
+}
+  </style>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a class="active" href="buy.html">Köp</a>
+    <a href="meny.html">Meny</a>
+  </div>
+
+  <h1>Köp Sommardrink!</h1>
+
+  <a>Dricka:</a>
+  <select id="select">
+    <option value="" selected disabled>Välj en dryck</option>
+    <option value="Lemonad">Lemonad</option>
+    <option value="Blåbärsdrink">Blåbärsdrink</option>
+    <option value="Jordgubbsdrink">Jordgubbsdrink</option>
+    <option value="Mojito">Mojito</option>
+    <option value="Vattenmelonsdrink">Vattenmelonsdrink</option>
+    <option value="Passionsdrink">Passionsdrink</option>
+  </select>
+  <br>
+
+  <a>Adress:</a>
+  <input id="adressInput">
+  <br>
+  <a>Email:</a>
+  <input id="emailInput">
+  <br>
+  <button onclick="Buy()">Köp</button>
+  <br>
+
+  <div id="outputContainer"></div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <style>
+    body {
+      font-size: 1.875rem;
+      font-weight: bold; 
+      color: black; 
+    }
+  </style>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="buy.html">Köp</a>
+    <a class="active" href="meny.html">Meny</a>
+  </div>
+
+<h2 id="meny-titel" style="text-align:center">Meny</h2>
+
+<div class="container">
+  <div class="mySlides slide1">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/blåbärv2.jpg" alt="Blåbärsdrink - En svalkande blåbärsupplevelse">
+  </div>
+
+  <div class="mySlides slide2">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/jordgubb.jpg" alt="Jordgubbsdrink - Bevis på sommar">
+  </div>
+
+  <div class="mySlides slide3">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/lemonadv3.jpg" alt="Lemonad - Klassisk och uppfriskande">
+  </div>
+
+  <div class="mySlides slide4">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/mojito.jpg" alt="Mojito - En favorit">
+  </div>
+
+  <div class="mySlides slide5">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/passionsdrink.webp" alt="Passionsdrink - Unik och läcker">
+  </div>
+
+  <div class="mySlides slide6">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/vattenmelon.webp" alt="Vattenmelonsdrink - Lika god att dricka som att äta">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+ 
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let slideIndex = 1;
+      showSlides(slideIndex);
+    });
+  </script>
+</body>
+</html>
